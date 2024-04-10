@@ -5,5 +5,13 @@
   status = 200
   conditions = {Role = ["editor", "admin"]}
 
+  [[redirects]]
+  from = "/admin"
+  to = "/admin"
+  force = true
+  status = 200
+  conditions = {Role = ["editor", "admin"]}
+
+
 # In this example, visitors whose JWT tokens include the `admin` or
 # `editor` role can access the `/admin` path.
